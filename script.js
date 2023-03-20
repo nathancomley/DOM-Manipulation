@@ -1,13 +1,16 @@
+// Step 1 find the element
 var addTaskButton = document.getElementById("add-task");
-var newTaskInput = document.getElementById("add-input");
-var tpdoListContainer = document.getElementById("todo-list");
+var newTaskInput = document.getElementById("task-input");
+var todoListContainer = document.getElementById("todo-list");
 
-
+// Step 2 Write the behaviour
 function onAddTaskClicked(event) {
     var taskName = newTaskInput.value;
     newTaskInput.value = "";
-    todoListContainer.insertAdjustmentHTML('afterbegin',taskName);
+    todoListContainer.insertAdjacentHTML('afterbegin', taskName);
 }
 
 
-addTaskButton.addEventListener('click' onAddTaskClicked);
+// Step 3 link to event handler
+addTaskButton.addEventListener('click', onAddTaskClicked);
+
