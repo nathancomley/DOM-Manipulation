@@ -10,4 +10,4 @@ function onAddTaskClicked(event) {
 }
 
 
-addTaskButton.addEventListener('click' onAddTaskClicked)
+addTaskButton.addEventListener('click' onAddTaskClicked);
